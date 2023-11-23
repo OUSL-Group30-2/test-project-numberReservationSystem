@@ -1,0 +1,161 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    transition: 0.3s;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+header nav{
+    width: 90%;
+    margin: auto;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav .logo{
+    color: #f1f0f5;
+    background: linear-gradient(to right, #000080, #00ffff);
+    border: none;
+    border-radius: 10px;
+    font-size: 30px;
+    font-weight: 1000;
+    }
+header nav .menu a{
+    color: #fff;
+    margin-left: 50px;
+    font-size: 18px;
+}
+header nav .menu a:hover{
+    color: #379cf4;
+}
+
+.info{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(bg.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info .contanier{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.info .contanier .text p{
+    font-size:30px;
+    font-family:cursive;
+    color: #dedede;
+    width: 80%;
+    margin: 20px 0 30px;
+    line-height: 1.8;
+}
+
+.sign{
+    width: 360px;
+    height: 260px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.800);
+    text-align: center;
+    padding: 30px;
+}
+.sign h3{
+    color: #fff;
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+.sign form input{
+    width: 100%;
+    outline: none;
+    padding: 12px 0;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #379cf4;
+    color: #fff;
+    margin-bottom: 20px;
+}
+::placeholder{
+    color: #fff;
+}
+.sign form button{
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #379cf4;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 0;
+    cursor: pointer;
+
+}
+.admin{
+    position: absolute;
+    top: 750px;
+    left: 500px;
+    right:500px;
+    width: 360px;
+    height: 380px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.800);
+    text-align: center;
+    padding: 30px;
+}
+.admin h2{
+    color: #fff;
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+.admin form input{
+    width: 100%;
+    outline: none;
+    padding: 12px 0;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #379cf4;
+    color: #fff;
+    margin-bottom: 20px;
+}
+::placeholder{
+    color: #fff;
+}
+.admin form button{
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #379cf4;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 0;
+    cursor: pointer;
+}
+
+.admin form .account{
+    color: #fff;
+    margin: 40px 0 10px;
+}
+.admin form .sign-up{
+    color: #fff;
+}
+.admin form .sign-up a{
+    color: #379cf4;
+}
+.admin form .sign-up a:hover{
+    text-decoration: underline;
+}
+
+
