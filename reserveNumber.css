@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    transition: 0.3s;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+header nav{
+    width: 90%;
+    margin: auto;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav .logo{
+    color: #f1f0f5;
+    background: linear-gradient(to right, #000080, #00ffff);
+    border: none;
+    border-radius: 10px;
+    font-size: 30px;
+    font-weight: 1000;
+    }
+header nav .menu a{
+    color: #fff;
+    margin-left: 50px;
+    font-size: 18px;
+}
+header nav .menu a:hover{
+    color: #379cf4;
+}
