@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Clinic Number Reservation System </title>
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="homeStyle.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" class="logo">Online Clinic Number Reservation </a>
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="clinic.html">Clinics</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact Us</a>
+            </div>
+         </nav>
+    </header>
+
+    <div class="info">
+        <div class="contanier">
+            <div class="text">
+                <p>We hope to give you a comfortable clinical service.</p>
+                 
+            </div>
+            <div class="sign">
+                <h3>Login Here</h3>
+                <form action="">
+                    <input type="text" placeholder="Enter Your PatientID">
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+            <div class="admin">
+            <h2>Admin Login</h2>
+                <form action="/admin/login" method="post">
+                    <input type="text" name="username" placeholder="Username">
+                    <input type="password" name="password" placeholder="Password">
+                    <button type="submit">Login</button>
+
+                    <p class="account">Don't Have an Account?</p>
+                    <p class="sign-up"><a href="#">Sign up</a> here</p>
+                </form>
+            </div>
+        </div
+    </div>
+</body>
+</html>
