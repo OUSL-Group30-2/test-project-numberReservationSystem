@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Contact Us </title>
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="contactUs.css">
+</head>
+    <body>
+    <div class="navbar">
+        <div class="logo"> Clinic Number Reservation</div>
+        <div class="toggle-button" id="toggleButton">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="homePage.html"><b>Home</b></a></li>
+                <li><a href="aboutUs.html"><b>About Us</b></a></li>
+                <li><a href="contactUs.html"><b>Contact Us</b></a></li>
+            </ul>
+        </div>
+    <script type="text/javascript">
+        
+      const toggleButton = document.getElementById('toggleButton');
+      const navLinks = document.getElementById('navLinks');
+
+      toggleButton.addEventListener('click', () =>{
+          navLinks.classList.toggle('active');
+          });
+    </script>
+    </div>
+    
+       <div class="text">
+        Contact Details
+       </div>
+       <div class="address">
+        <h3>General Hospital Kalutara,</h3>
+        <p>Kalutara-Matugama Rd,<br> Kalutara 12000,<br> Sri Lanka</p><br><br><br>
+        <p><b>Phone:</b></p>
+        <p>034 2229129</p>
+        <p>034 2222261-62</p>
+        <p>034 2236050-51</p><br><br><br>
+        <p><b>Email:</b>ghklhealth@gmail.com </p>
+        </div>
+   
+        <div class="google-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15854.705863121575!2d79.9854544!3d6.5624602!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae231353497447d%3A0xd5fdb47682d781b3!2sTeaching%20Hospital%20-%20Kalutara!5e0!3m2!1sen!2slk!4v1701782615191!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    
+    
+    </body>
+</html>

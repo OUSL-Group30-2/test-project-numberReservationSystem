@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserve Number </title>
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="reserveNumberStyle.css">
+</head>
+<body>
+    
+    <div class="container">
+    <h3>Make your confirmation to get a number for the clinic and you will receive the message with your number to your phone.</h3>
+    <br><br><br><br>
+    <form action="" onsubmit="return validateForm()">
+    
+    <div class="user-input-box">
+        <label for="dateofclinic">Select your clinic date</label>
+        <input type="date"
+                id="dateofclinic"
+                name="dateofclinic"
+                placeholder="Enter Date Of Clinic"/>
+      </div>
+    
+
+    <div class="form-submit-btn">
+        <button class="reserve">Reserve</button>
+         <!-- <span class="overlay"></span>
+         <div class="reserve-box">
+            <i class="fa-regular fa-circle-check"></i>
+            <h2>Completed</h2>
+            <h3>You have sucessfully reserved your number.</h3>
+    
+            <div class="buttons">
+              <button class="close-btn">Confirm</button>
+              <button>Cancel</button>
+            </div>
+          </div> -->
+    </div>
+</form>
+<div id="reservationResult" class="hidden"></div>
+</div>
+
+    <!-- <script>
+        const formSubmitBtn = document.querySelector(".form-submit-btn"),
+          overlay = document.querySelector(".overlay"),
+          showBtn = document.querySelector(".reserve"),
+          closeBtn = document.querySelector(".close-btn");
+  
+        showBtn.addEventListener("click", () => formSubmitBtn.classList.add("active"));
+  
+        overlay.addEventListener("click", () =>
+        formSubmitBtn.classList.remove("active")
+        );
+  
+        closeBtn.addEventListener("click", () =>
+        formSubmitBtn.classList.remove("active")
+        );
+      </script> -->
+      <script>
+        function reserveNumber() {
+            var selectedDate = document.getElementById('dateofclinic').value;
+
+            if (!isValidDate(selectedDate)) {
+                alert("Please select a valid date.");
+                return false;
+            }
+
+            if (getReservationsCount(selectedDate) >= 100) {
+                alert("Sorry, all reservations for this date have been filled. Please choose another date.");
+                return false;
+            }
+
+            var reservationNumber = generateReservationNumber(selectedDate);
+            displayReservationNumber(reservationNumber);
+
+            // You can also send a confirmation message to the user's phone here
+
+            return true;
+        }
+
+        function isValidDate(dateString) {
+            var regex = /^\d{4}-\d{2}-\d{2}$/;
+            return dateString.match(regex) !== null;
+        }
+
+        function getReservationsCount(selectedDate) {
+            // Replace this with your logic to fetch the reservation count for the selected date
+            // For now, let's assume it's a static count (you should implement server-side logic for this)
+            return 0;
+        }
+
+        function generateReservationNumber(selectedDate) {
+            // Replace this with your logic to generate a unique reservation number
+            // For now, let's generate a random number (you should implement server-side logic for this)
+            return Math.floor(Math.random() * 1000) + 1;
+        }
+
+        function displayReservationNumber(number) {
+            var resultElement = document.getElementById('reservationResult');
+            resultElement.innerHTML = "Reservation successful! Your number is: " + number;
+            resultElement.classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
