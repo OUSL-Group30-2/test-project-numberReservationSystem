@@ -5,12 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Home </title>
-
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Link to external stylesheet for styling -->
     <link rel="stylesheet" href="homeStyle.css">
 </head>
     <body>
+    <!-- Navigation bar section -->
     <div class="navbar">
         <div class="logo"> Clinic Number Reservation <h6>(Kalutara General Hospital)</h6></div>
         <div class="toggle-button" id="toggleButton">
@@ -18,47 +17,21 @@
             <div class="bar"></div>
             <div class="bar"></div>
             </div>
+             <!-- Navigation links -->
             <ul class="nav-links" id="navLinks">
                 <li><a href="homePage.html"><b>Home</b></a></li>
                 <li><a href="aboutUs.html"><b>About Us</b></a></li>
                 <li><a href="contactUs.html"><b>Contact Us</b></a></li>
             </ul>
     </div>
-    <!-- <script type="text/javascript">
-        
-        const toggleButton = document.getElementById('toggleButton');
-        const navLinks = document.getElementById('navLinks');
-
-        toggleButton.addEventListener('click', () =>{
-            navLinks.classList.toggle('active');
-            });
-
-        
-        //     function validateLoginForm() {
-        //     var patientId = document.querySelector('input[name="patientId"]').value;
-        //     var password = document.querySelector('input[name="password"]').value;
-
-        //     if (patientId === '' || password === '') {
-        //         alert('Patient ID and Password are required fields');
-        //         return false;
-        //     }
-
-        //     // Check if the entered patientId and password match predefined values
-        //     if (patientId !== 'examplePatientID' || password !== 'examplePassword') {
-        //         alert('Invalid Patient ID or Password');
-        //         return false;
-        //     }
-
-        //     // If validation passes, you can submit the form
-        //     return true;
-        // }   
-    </script>  -->
+     
      
         <div class="contanier">
             <div class="text">
                 <p>We hope to give you a comfortable clinical service.</p>
                  
             </div>
+             <!-- Login form section -->
             <div class="sign">
                 <h3>Login Here</h3>
                 <form action="login.php" method="post" >

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Display Number</title>
+  <link rel="stylesheet" href="displayNumber.css">
+</head>
+<body>
+  <div class="container">
+    
+    <p>You have successfully reserved your number and your number is: <span id="appointmentNumber"></span></p>
+    <br><br><br><br>
+    </div>
+  
+   <a href="#" class="logout-button" onclick="confirmLogout()">Log out</a>
+
+    <script>
+      // Get the appointment number from the URL query parameters
+      const urlParams = new URLSearchParams(window.location.search);
+      const appointmentNo = urlParams.get('appointmentNo');
+  
+      // Display the appointment number in the designated span element
+      document.getElementById('appointmentNumber').textContent = appointmentNo;
+
+      // Function to show confirmation pop-up before logging out
+    function confirmLogout() {
+      const confirmLogout = window.confirm("Are you sure you want to log out?");
+      if (confirmLogout) {
+        // Perform logout or redirect to the logout page
+        window.location.href = "homePage.html";
+      }
+    }
+    </script>
+    
+</body>
+</html> 

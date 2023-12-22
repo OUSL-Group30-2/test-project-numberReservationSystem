@@ -5,20 +5,22 @@
     <title>Sign Up</title>
     <meta name="viewport" content="width=device-width,
       initial-scale=1.0"/>
+      <!-- Link to external stylesheet for styling -->
     <link rel="stylesheet" href="signUpStyle.css" />
     
   </head>
   <body>
     <div class="container">
       <h1 class="form-title">Registration</h1>
+        <!-- Registration form with action set to signup.php and method set to POST -->
       <form action="signup.php" method="post" >
         <div class="main-user-info">
           <div class="user-input-box">
-            <label for="userId">UserID</label>
+            <label for="userId">Patient Id</label>
             <input type="text"
                     id="userId"
                     name="userId"
-                    placeholder="Enter UserID"/>
+                    placeholder="Enter Your Patient Id"/>
           </div>
           <div class="user-input-box">
             <label for="fullName">Full Name</label>
@@ -83,7 +85,7 @@
         </div>
         <div class="form-submit-btn">
           <input type="submit" value="Register" >
-          <input type="submit" value="Cancel" >
+          <input type="reset" value="Cancel" >
         </div>
        
       </form>
